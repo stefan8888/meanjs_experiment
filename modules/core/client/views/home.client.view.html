@@ -17,8 +17,35 @@
       </p>
     </div>
   </div>
+
+  <div class="row">
+    <div class = "col-sm-6" ng-repeat = "alert in alerts">
+      <div class = "row">
+        <div class="col-xs-2">
+          <h1 class = "pull-right">
+          <button type="button" class = "btn" ng-class = "alert.colour">
+            <i class="glyphicon" ng-class="alert.icon"> </i>
+          </button>
+        </h1>
+        </div>
+        <div class="col-xs-10">
+          <h1>{{alert.total}}</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-2">
+          <span class = "text-muted">{{alert.description}}</span>
+        </div>
+      </div>
+  </div>
+
+
+
+
   <div>
     <h2>Congrats! You've configured and run the sample application.</h2>
+    <h2>Meanjs is great!</h2>
     <p>MEAN.JS is a web application boilerplate, which means you should start changing everything :-)</p>
     <p>This sample application tracks users and articles.</p>
     <ul>
